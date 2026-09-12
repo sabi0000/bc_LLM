@@ -1,0 +1,16 @@
+[
+  {
+    "Time_s":0,
+    "HeartRate_bpm":84.0,
+    "MeanArterialPressure_mmHg":94.8,
+    "CardiacOutput_L_min":6.14,
+    "BloodVolume_mL":5488.43
+  },
+  {
+    "Time_s":30,
+    "HeartRate_bpm":84.98,
+    "MeanArterialPressure_mmHg":94.75,
+    "CardiacOutput_L_min":6.02,
+    "BloodVolume_mL":5378.13
+  }
+]

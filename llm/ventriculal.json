@@ -1,0 +1,26 @@
+[
+  {
+    "Time_s":0.0,
+    "HeartRate_bpm":72.2117983756,
+    "ArterialPressure_mmHg":65.8788250744,
+    "MeanArterialPressure_mmHg":78.9608752396,
+    "SystolicPressure_mmHg":97.2570442653,
+    "DiastolicPressure_mmHg":62.2264022972,
+    "OxygenSaturation":0.9682827708,
+    "RespirationRate_bpm":11.9521912351,
+    "CardiacOutput_L_min":4.8097624175,
+    "BloodVolume_mL":5495.9755392505
+  },
+  {
+    "Time_s":30.0,
+    "HeartRate_bpm":71.6230188743,
+    "ArterialPressure_mmHg":71.9220839734,
+    "MeanArterialPressure_mmHg":78.9945144091,
+    "SystolicPressure_mmHg":97.3805140044,
+    "DiastolicPressure_mmHg":62.1921806314,
+    "OxygenSaturation":0.9673322693,
+    "RespirationRate_bpm":12.0967741935,
+    "CardiacOutput_L_min":4.8000447746,
+    "BloodVolume_mL":5498.9926748911
+  }
+]

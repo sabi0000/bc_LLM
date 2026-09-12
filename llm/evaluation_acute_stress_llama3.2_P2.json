@@ -1,0 +1,136 @@
+{
+  "dataset": "acute_stress.json",
+  "model": "llama3.2",
+  "prompt_strategy": "P2",
+  "stable_threshold_percent": 1.0,
+  "response_time_seconds": 12.700646000012057,
+  "trend_accuracy_percent": 77.77777777777779,
+  "ground_truth": {
+    "HeartRate_bpm": {
+      "initial": 83.999999999,
+      "final": 85.942484767,
+      "percent_change": 2.312481866694196,
+      "expected_trend": "increase"
+    },
+    "ArterialPressure_mmHg": {
+      "initial": 113.4494806258,
+      "final": 117.9757384795,
+      "percent_change": 3.989668201857465,
+      "expected_trend": "increase"
+    },
+    "MeanArterialPressure_mmHg": {
+      "initial": 94.7975690628,
+      "final": 96.0632041061,
+      "percent_change": 1.3350922980541522,
+      "expected_trend": "increase"
+    },
+    "SystolicPressure_mmHg": {
+      "initial": 114.4655093908,
+      "final": 118.0168403591,
+      "percent_change": 3.102533669050741,
+      "expected_trend": "increase"
+    },
+    "DiastolicPressure_mmHg": {
+      "initial": 73.5177917102,
+      "final": 72.3910738035,
+      "percent_change": -1.5325785507015866,
+      "expected_trend": "decrease"
+    },
+    "OxygenSaturation": {
+      "initial": 0.9727567053,
+      "final": 0.9726344806,
+      "percent_change": -0.012564775892478909,
+      "expected_trend": "stable"
+    },
+    "RespirationRate_bpm": {
+      "initial": 16.0427807487,
+      "final": 16.0427807487,
+      "percent_change": 0.0,
+      "expected_trend": "stable"
+    },
+    "CardiacOutput_L_min": {
+      "initial": 6.1423258649,
+      "final": 6.1255737711,
+      "percent_change": -0.2727320915311422,
+      "expected_trend": "stable"
+    },
+    "BloodVolume_mL": {
+      "initial": 5488.4311032949,
+      "final": 5490.7753221464,
+      "percent_change": 0.04271200289082116,
+      "expected_trend": "stable"
+    }
+  },
+  "comparison": {
+    "HeartRate_bpm": {
+      "expected": "increase",
+      "llm": "increase",
+      "correct": true
+    },
+    "ArterialPressure_mmHg": {
+      "expected": "increase",
+      "llm": "increase",
+      "correct": true
+    },
+    "MeanArterialPressure_mmHg": {
+      "expected": "increase",
+      "llm": "increase",
+      "correct": true
+    },
+    "SystolicPressure_mmHg": {
+      "expected": "increase",
+      "llm": "increase",
+      "correct": true
+    },
+    "DiastolicPressure_mmHg": {
+      "expected": "decrease",
+      "llm": "decrease",
+      "correct": true
+    },
+    "OxygenSaturation": {
+      "expected": "stable",
+      "llm": "stable",
+      "correct": true
+    },
+    "RespirationRate_bpm": {
+      "expected": "stable",
+      "llm": "stable",
+      "correct": true
+    },
+    "CardiacOutput_L_min": {
+      "expected": "stable",
+      "llm": "increase",
+      "correct": false
+    },
+    "BloodVolume_mL": {
+      "expected": "stable",
+      "llm": "increase",
+      "correct": false
+    }
+  },
+  "llm_response": {
+    "trends": {
+      "HeartRate_bpm": "increase",
+      "ArterialPressure_mmHg": "increase",
+      "MeanArterialPressure_mmHg": "increase",
+      "SystolicPressure_mmHg": "increase",
+      "DiastolicPressure_mmHg": "decrease",
+      "OxygenSaturation": "stable",
+      "RespirationRate_bpm": "stable",
+      "CardiacOutput_L_min": "increase",
+      "BloodVolume_mL": "increase"
+    },
+    "summary": "The physiological data shows an overall increase in heart rate, arterial pressure, mean arterial pressure, systolic pressure, and cardiac output. However, diastolic pressure decreases slightly. Oxygen saturation remains stable, while respiration rate and blood volume remain relatively stable.",
+    "interpretation": "These changes may indicate a response to physical activity or stress. Further analysis is needed to determine the underlying cause of these changes.",
+    "limitations": [
+      "The data only spans two time points (0s and 60s), which may not be sufficient to capture long-term trends or fluctuations."
+    ]
+  },
+  "manual_evaluation": {
+    "hallucination_control": null,
+    "interpretation_quality": null,
+    "limitations_handling": null,
+    "relevance": null,
+    "instruction_adherence": null
+  }
+}
