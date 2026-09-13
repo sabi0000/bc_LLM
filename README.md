@@ -16,6 +16,7 @@ S rozvojom konceptu ľudských digitálnych dvojčiat (Human-Digital Twin) v dom
 
 # Základná navrhovaná pipeline:
 
+```
 Pulse Physiology Engine
 
 ↓
@@ -37,7 +38,7 @@ lokálny LLM
 ↓
 
 textová interpretácia / report
-
+```
 
 LLM má pracovať iba s poskytnutými dátami a nemala by dopĺňať chýbajúce hodnoty, symptómy, diagnózy ani iné informácie, ktoré zo vstupných dát nemožno odvodiť.
 
